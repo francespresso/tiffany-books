@@ -1,0 +1,171 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #16f4d0;
+}
+
+nav ul li {
+    display: inline;
+    padding: 0px 8px;
+}
+
+header {
+    padding: 0;
+    height: 700px;
+    text-align: center;
+}
+
+.no-splash {
+    height: 100px;
+}
+
+#splash {
+    background: url(https://images.unsplash.com/photo-1516979187457-637abb4f9353);
+    position: fixed;
+    width: 100%;
+    height: 150%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    
+}
+
+#name {
+    font-size: 50px;
+}
+
+footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    text-shadow:    0px 4px 3px rgba(0,0,0,0.4),
+                    0px 8px 13px rgba(0,0,0,0.1),
+                    0px 18px 23px rgba(0,0,0,0.1);
+}
+
+nav {
+    display: inline-block;
+    background: white;
+    position: fixed;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    padding: 1% 5%;
+    -moz-box-shadow:    3px 3px 5px 6px #16f4cf28;
+    -webkit-box-shadow: 3px 3px 5px 6px #16f4cf28;
+    box-shadow:         3px 3px 3px 3px #16f4cf28,
+                        1px 1px 1px 1px #16f4cf4f;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    margin: 2%; 
+}
+
+main {
+    padding: 3%;
+    background: white;;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 0;
+    margin-top: 75px;
+}
+
+.headshot {
+    width: 100%;
+}
+
+.update {
+    padding: 0 2%;
+}
+
+#copyright {
+    font-size: 85%;
+}
+
+.icon {
+    height: 35px;
+    width: 35px;
+    margin: 7px;
+}
+
+a, 
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    border-bottom: 3px solid #16f4d0;
+    display: inline-block;
+    line-height: 1;
+    text-shadow:
+      2px 2px white,
+      2px -2px white,
+      -2px 2px white,
+      -2px -2px white;
+}
+
+.current-link {
+    border-bottom: 3px solid #ff5e5b;
+    display: inline-block;
+    line-height: 1;
+    text-shadow:
+      2px 2px white,
+      2px -2px white,
+      -2px 2px white,
+      -2px -2px white;
+}
+
+
+
+p {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+hr { 
+    border: 0; 
+    height: 2px; 
+    background-image: -webkit-linear-gradient(left, #f0f0f0, #16f4d0, #f0f0f0);
+    background-image: -moz-linear-gradient(left, #f0f0f0, #16f4d0, #f0f0f0);
+    background-image: -ms-linear-gradient(left, #f0f0f0, #16f4d0, #f0f0f0);
+    background-image: -o-linear-gradient(left, #f0f0f0, #16f4d0, #f0f0f0); 
+}
+
+
+
+@media screen and (min-width: 480px) {
+    header {
+        text-align: left;
+    }
+
+    nav ul li {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    nav ul {
+        float: right;
+    }
+
+    .icon {
+        margin: 0 7px;
+    }
+
+    main {
+        margin-top: 3%;
+    }
+}
+
+@media only screen and (max-device-width: 1366px) {
+    #splash {
+        background-attachment: scroll;
+    }
+}
